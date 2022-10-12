@@ -1,0 +1,916 @@
+.text-color {
+  color: #6A983C !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-color:hover {
+  color: #007c21 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 6px 30px;
+  margin: 0 auto;
+}
+.header .header__blog {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1px solid rgb(153, 146, 146);
+}
+.header .header__blog a {
+  padding: 13px;
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.header .header__blog a:hover {
+  padding: 13px;
+  color: #48b52a;
+  text-decoration: none;
+}
+.header .header__blog .header__contact {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__search {
+  padding: 35px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__search-title {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.header .header__search-title a {
+  text-decoration: none;
+  color: #151515;
+}
+.header .header__search-input {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  transition: all 0.6;
+}
+.header .header__search-input:focus-within {
+  border: 1px solid #48b52a;
+}
+.header .header__search-input .header__category {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__search-input .header__category .header__select {
+  padding: 12px 25px;
+  color: #151515;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bolder;
+  outline: none;
+}
+.header .header__search-input .header__inp {
+  margin: auto;
+  color: #A9A9A9;
+}
+.header .header__search-input .header__inp .header__inp-input {
+  width: 300px;
+  border: none;
+  padding: 5px 5px;
+  outline: none;
+  background: #F9F9F9;
+}
+.header .header__search-input .header__btn {
+  margin: auto;
+}
+.header .header__search-input .header__btn i {
+  padding: 25px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.header .header__search-input .header__btn i:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.header .header__search-acaunt i {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 25px;
+  opacity: 0.6;
+  transition: all 1s;
+}
+.header .header__search-acaunt i:hover {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 25px;
+  opacity: 1;
+}
+
+.category {
+  background: #F9F9F9;
+  padding: 10px 60px;
+}
+.category__select {
+  padding: 16px 25px;
+  border: none;
+  outline: none;
+  background: #F9F9F9;
+  cursor: pointer;
+  font-size: 16px;
+}
+.category__select:focus {
+  opacity: 0.6;
+}
+
+.container {
+  padding: 35px 45px;
+  display: flex;
+}
+.container .aside {
+  height: 250px;
+  width: 25%;
+}
+.container .aside p {
+  margin-top: 20px;
+  color: #6A983C;
+}
+.container .aside__button:hover {
+  background: #48b52a;
+  color: #FFFFFF;
+}
+.container .aside__button {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 16px 16px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.container .sections {
+  display: flex;
+  width: 75%;
+  gap: 20px;
+}
+.container .section {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.container .section__card {
+  transition: all 0.6s;
+  width: 48%;
+  padding: 40px 35px;
+  background: url("../img/Banner.png");
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.container .section__card-title {
+  font-size: 25px;
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+}
+.container .section__card-button {
+  background: #F4F8EC;
+  border-radius: 12px;
+  border: none;
+  outline: 2px solid #007c21;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin-top: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.6s;
+}
+.container .section__card-button:hover {
+  background: #0aad12;
+  outline: 2px solid #007c21;
+  color: white;
+}
+.container .section__card:hover {
+  opacity: 0.8;
+}
+.container .section__cards :hover {
+  opacity: 0.8;
+}
+.container .section__cards {
+  padding: 19px;
+  background: #FFFFFF;
+  border: 1px solid #a6a6a6;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.container .section__cards-img {
+  width: 237;
+  height: 180px;
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+.container .section__cards-title {
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.container .section__cards_text {
+  color: #A9A9A9;
+  font-weight: 500;
+  font-size: 14px;
+}
+.container .section__cards_sena {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.container .section__cards_sena-sena {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.container .section__cards_sena_button {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: 0.5s;
+  font-weight: bold;
+  display: block;
+}
+.container .section__cards_sena_button2 {
+  background: #fa0a0a;
+  border: 2px solid #a40b62;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #040404;
+  transition: 0.5s;
+  font-weight: bold;
+  display: none;
+}
+.container .section__cards_sena_button:hover {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  color: black;
+}
+
+.news__cards {
+  padding: 35px 55px;
+}
+.news__cards-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.news__cards-title-button {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 16px 16px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.news__cards-title-button:hover {
+  background: #48b52a;
+  color: #FFFFFF;
+}
+.news__cards .section__cards_sena {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.news__cards .section__cards_sena-sena {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.news__cards .section__cards_sena_button {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: 0.5s;
+  font-weight: bold;
+  display: block;
+}
+.news__cards .section__cards_sena_button2 {
+  background: #d71a92;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: 0.5s;
+  font-weight: bold;
+  display: none;
+}
+.news__cards .section__cards_sena_button:hover {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  color: black;
+}
+.news__cards-card {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.news__cards-card .news__cards {
+  padding: 19px;
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.news__cards-card .news__cards-img {
+  width: 237;
+  height: 180px;
+  background: #A9A9A9;
+}
+.news__cards-card .news__cards-title {
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+.news__cards-card .news__cards_text {
+  color: #A9A9A9;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.news__cards-card .news__cards_sena {
+  font-weight: bold;
+}
+.news__cards-card .news__cards_button {
+  margin-left: 100px;
+  margin-top: 25px;
+  background: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.news__cards-card .news__cards_button:hover {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  color: black;
+}
+
+.news {
+  padding: 0 60px;
+}
+.news-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+.news__blog {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.news__blog-img {
+  background: url("imgbg.jpg");
+  width: 450px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 12px;
+}
+
+.product__tags {
+  padding: 35px 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.product__tags p {
+  padding: 8px 0;
+  font-family: "Poppins", sans-serif;
+}
+.product__tags p a {
+  text-decoration: none;
+  color: #6A983C;
+}
+
+.product {
+  padding: 30px 55px;
+}
+.product__item {
+  padding: 20px 0;
+}
+.product__item-card {
+  padding: 6px 12px;
+  background: #afafaf;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.6s;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
+.product__item-card:hover {
+  background: #868686;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px;
+  gap: 32px;
+  background: #FFFFFF;
+}
+
+.blog-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-post h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.div-blog-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background: #FFFFFF;
+  flex: none;
+  order: 7;
+}
+
+.blog-item-img {
+  width: 40%;
+  height: 300px;
+  background: url("https://www.yumnutrition.org/wp-content/uploads/2020/12/joseph-gonzalez-fdlZBWIP0aM-unsplash-1200x1200.jpg");
+  border-radius: 12px;
+  background-size: 100%;
+}
+
+.blog-item-img p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  padding: 40px;
+  margin-top: 150px;
+}
+
+.blog-card {
+  width: 25%;
+  height: 180px;
+  border-radius: 12px;
+  background-size: 100%;
+}
+
+.blog-card img {
+  height: 180px;
+  border-radius: 12px;
+  background-size: 100%;
+}
+
+.blog-card h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.blog-item-text h3 {
+  width: 225px;
+  height: 46px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151515;
+  flex: none;
+}
+
+.blog-item-text p {
+  width: 109px;
+  height: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+  flex: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-imgs img {
+  width: 106px;
+  height: 96px;
+  border-radius: 12px;
+}
+
+.blog__post-button {
+  margin-left: 100px;
+  margin-top: 25px;
+  background: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+#shop {
+  color: red;
+}
+
+@media only screen and (max-width: 990px) {
+  body .header {
+    display: none;
+  }
+  body .container {
+    display: block;
+  }
+  body .container .aside {
+    height: 250px;
+    width: 100%;
+  }
+  body .container .aside p {
+    margin-top: 20px;
+    color: #6A983C;
+  }
+  body .container .aside__button:hover {
+    background: #48b52a;
+    color: #FFFFFF;
+  }
+  body .container .aside__button {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 16px 16px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  body .container .sections {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  body .container .section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body .container .section__card {
+    transition: all 0.6s;
+    width: 90%;
+    padding: 40px 35px;
+    background: url("../img/Banner.png");
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  body .container .section__card-title {
+    font-size: 25px;
+    padding: 15px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  body .container .section__card-button {
+    background: #F4F8EC;
+    border-radius: 12px;
+    border: none;
+    outline: 2px solid #007c21;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.6s;
+  }
+  body .container .section__card-button:hover {
+    background: #0aad12;
+    outline: 2px solid #007c21;
+    color: white;
+  }
+  body .container .section__card:hover {
+    opacity: 0.8;
+  }
+  body .container .section__cards :hover {
+    opacity: 0.8;
+  }
+  body .container .section__cards {
+    padding: 19px;
+    background: #FFFFFF;
+    border: 1px solid #a6a6a6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  body .container .section__cards-img {
+    width: 237;
+    height: 180px;
+    background: #e5e5e5;
+    border-radius: 10px;
+  }
+  body .container .section__cards-title {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  body .container .section__cards_text {
+    color: #A9A9A9;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  body .container .section__cards_sena {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  body .container .section__cards_sena-sena {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  body .container .section__cards_sena_button {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-weight: bold;
+    display: block;
+  }
+  body .container .section__cards_sena_button2 {
+    background: #fa0a0a;
+    border: 2px solid #a40b62;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #040404;
+    transition: 0.5s;
+    font-weight: bold;
+    display: none;
+  }
+  body .container .section__cards_sena_button:hover {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    color: black;
+  }
+  body .news__cards {
+    padding: 35px 55px;
+  }
+  body .news__cards-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body .news__cards-title-button {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 16px 16px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  body .news__cards-title-button:hover {
+    background: #48b52a;
+    color: #FFFFFF;
+  }
+  body .news__cards .section__cards_sena {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  body .news__cards .section__cards_sena-sena {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  body .news__cards .section__cards_sena_button {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-weight: bold;
+    display: block;
+  }
+  body .news__cards .section__cards_sena_button2 {
+    background: #d71a92;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-weight: bold;
+    display: none;
+  }
+  body .news__cards .section__cards_sena_button:hover {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    color: black;
+  }
+  body .news__cards-card {
+    padding: 35px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body .news__cards-card .news__cards {
+    padding: 19px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  body .news__cards-card .news__cards-img {
+    width: 237;
+    height: 180px;
+    background: #A9A9A9;
+  }
+  body .news__cards-card .news__cards-title {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  body .news__cards-card .news__cards_text {
+    color: #A9A9A9;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+  body .news__cards-card .news__cards_sena {
+    font-weight: bold;
+  }
+  body .news__cards-card .news__cards_button {
+    margin-left: 100px;
+    margin-top: 25px;
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  body .news__cards-card .news__cards_button:hover {
+    background: #6A983C;
+    border: 2px solid #46760A;
+    color: black;
+  }
+  body .blog-post {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    padding: 64px;
+    gap: 32px;
+    background: #FFFFFF;
+  }
+  body .blog-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .blog-post h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+  }
+  body .div-blog-img {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background: #FFFFFF;
+    flex: none;
+    order: 7;
+  }
+  body .blog-item-img {
+    width: 100%;
+    background: url("https://www.yumnutrition.org/wp-content/uploads/2020/12/joseph-gonzalez-fdlZBWIP0aM-unsplash-1200x1200.jpg");
+    border-radius: 12px;
+    background-size: 100%;
+  }
+  body .blog-item-img p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+    padding: 40px;
+    margin-top: 150px;
+  }
+  body .blog-card {
+    width: 95%;
+    height: 180px;
+    border-radius: 12px;
+    background-size: 100%;
+  }
+  body .blog-card img {
+    height: 180px;
+    border-radius: 12px;
+    background-size: 100%;
+  }
+  body .blog-card h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+  }
+  body .blog-item-text h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    color: #151515;
+  }
+  body .blog-item-text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #151515;
+    flex: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body .blog-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #shop {
+    color: red;
+  }
+  body .product__tags {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .product__tags p {
+    padding: 8px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  body .product__tags p a {
+    text-decoration: none;
+    color: #6A983C;
+  }
+  body .product__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
