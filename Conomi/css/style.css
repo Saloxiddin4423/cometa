@@ -565,26 +565,7 @@
     display: block;
   }
   body .container .aside {
-    height: 250px;
     width: 100%;
-  }
-  body .container .aside p {
-    margin-top: 20px;
-    color: #6A983C;
-  }
-  body .container .aside__button:hover {
-    background: #48b52a;
-    color: #FFFFFF;
-  }
-  body .container .aside__button {
-    background: #F5F5F5;
-    border-radius: 12px;
-    padding: 16px 16px;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 30px;
-    transition: 0.5s;
   }
   body .container .sections {
     display: flex;
@@ -595,24 +576,75 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  body .news__cards-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body .news__cards-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  body .container .section__card {
+  body .blog-post {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
+  body .div-blog-img {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  body .blog-item-img {
+    width: 100%;
+  }
+  body .blog-card {
+    width: 95%;
+  }
+  body .blog-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .product__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: #a40b62;
+  }
+  body .header {
+    display: none;
+  }
+  body .container {
+    display: block;
+  }
+  body .container .aside {
+    width: 100%;
+  }
+  body .container .sections {
+    display: block;
+    width: 100%;
+  }
+  body .container .sections__card {
     transition: all 0.6s;
-    width: 90%;
-    padding: 40px 35px;
+    width: 100%;
     background: url("../img/Banner.png");
     border-radius: 12px;
     background-repeat: no-repeat;
     background-size: 100%;
     cursor: pointer;
   }
-  body .container .section__card-title {
+  body .container .sections__card-title {
     font-size: 25px;
     padding: 15px 0;
     font-family: "Poppins", sans-serif;
   }
-  body .container .section__card-button {
+  body .container .sections__card-button {
     background: #F4F8EC;
     border-radius: 12px;
     border: none;
@@ -624,290 +656,41 @@
     font-weight: bold;
     transition: all 0.6s;
   }
-  body .container .section__card-button:hover {
-    background: #0aad12;
-    outline: 2px solid #007c21;
-    color: white;
-  }
-  body .container .section__card:hover {
-    opacity: 0.8;
-  }
-  body .container .section__cards :hover {
-    opacity: 0.8;
-  }
-  body .container .section__cards {
-    padding: 19px;
-    background: #FFFFFF;
-    border: 1px solid #a6a6a6;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.6s;
-  }
-  body .container .section__cards-img {
-    width: 237;
-    height: 180px;
-    background: #e5e5e5;
-    border-radius: 10px;
-  }
-  body .container .section__cards-title {
-    padding: 10px 0;
-    font-weight: 500;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-  }
-  body .container .section__cards_text {
-    color: #A9A9A9;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  body .container .section__cards_sena {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-  }
-  body .container .section__cards_sena-sena {
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  body .container .section__cards_sena_button {
-    background: #6A983C;
-    border: 2px solid #46760A;
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #FFFFFF;
-    transition: 0.5s;
-    font-weight: bold;
-    display: block;
-  }
-  body .container .section__cards_sena_button2 {
-    background: #fa0a0a;
-    border: 2px solid #a40b62;
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #040404;
-    transition: 0.5s;
-    font-weight: bold;
-    display: none;
-  }
-  body .container .section__cards_sena_button:hover {
-    background: #6A983C;
-    border: 2px solid #46760A;
-    color: black;
-  }
-  body .news__cards {
-    padding: 35px 55px;
+  body .container .section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   body .news__cards-title {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  body .news__cards-title-button {
-    background: #F5F5F5;
-    border-radius: 12px;
-    padding: 16px 16px;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 30px;
-    transition: 0.5s;
-  }
-  body .news__cards-title-button:hover {
-    background: #48b52a;
-    color: #FFFFFF;
-  }
-  body .news__cards .section__cards_sena {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-  }
-  body .news__cards .section__cards_sena-sena {
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  body .news__cards .section__cards_sena_button {
-    background: #6A983C;
-    border: 2px solid #46760A;
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #FFFFFF;
-    transition: 0.5s;
-    font-weight: bold;
-    display: block;
-  }
-  body .news__cards .section__cards_sena_button2 {
-    background: #d71a92;
-    border: 2px solid #46760A;
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #FFFFFF;
-    transition: 0.5s;
-    font-weight: bold;
-    display: none;
-  }
-  body .news__cards .section__cards_sena_button:hover {
-    background: #6A983C;
-    border: 2px solid #46760A;
-    color: black;
-  }
   body .news__cards-card {
-    padding: 35px 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-  }
-  body .news__cards-card .news__cards {
-    padding: 19px;
-    background: #FFFFFF;
-    border: 1px solid #D1D1D1;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.6s;
-  }
-  body .news__cards-card .news__cards-img {
-    width: 237;
-    height: 180px;
-    background: #A9A9A9;
-  }
-  body .news__cards-card .news__cards-title {
-    padding: 10px 0;
-    font-weight: 500;
-    font-size: 18px;
-  }
-  body .news__cards-card .news__cards_text {
-    color: #A9A9A9;
-    font-weight: 500;
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-  }
-  body .news__cards-card .news__cards_sena {
-    font-weight: bold;
-  }
-  body .news__cards-card .news__cards_button {
-    margin-left: 100px;
-    margin-top: 25px;
-    background: #6A983C;
-    border: 2px solid #46760A;
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #FFFFFF;
-    transition: 0.5s;
-    font-weight: bold;
-  }
-  body .news__cards-card .news__cards_button:hover {
-    background: #6A983C;
-    border: 2px solid #46760A;
-    color: black;
   }
   body .blog-post {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    flex-direction: column;
-    padding: 64px;
     gap: 32px;
-    background: #FFFFFF;
-  }
-  body .blog-text {
-    display: flex;
-    justify-content: space-between;
-  }
-  body .blog-post h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: #151515;
   }
   body .div-blog-img {
     display: grid;
     gap: 35px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    background: #FFFFFF;
-    flex: none;
-    order: 7;
   }
   body .blog-item-img {
     width: 100%;
-    background: url("https://www.yumnutrition.org/wp-content/uploads/2020/12/joseph-gonzalez-fdlZBWIP0aM-unsplash-1200x1200.jpg");
-    border-radius: 12px;
-    background-size: 100%;
-  }
-  body .blog-item-img p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 33px;
-    color: #FFFFFF;
-    padding: 40px;
-    margin-top: 150px;
   }
   body .blog-card {
     width: 95%;
-    height: 180px;
-    border-radius: 12px;
-    background-size: 100%;
-  }
-  body .blog-card img {
-    height: 180px;
-    border-radius: 12px;
-    background-size: 100%;
-  }
-  body .blog-card h3 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    color: #151515;
-  }
-  body .blog-item-text h3 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    color: #151515;
-  }
-  body .blog-item-text p {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #151515;
-    flex: none;
-    font-family: "Poppins", sans-serif;
   }
   body .blog-imgs {
     display: flex;
     justify-content: space-between;
-  }
-  body #shop {
-    color: red;
-  }
-  body .product__tags {
-    display: flex;
-    justify-content: space-between;
-  }
-  body .product__tags p {
-    padding: 8px 0;
-    font-family: "Poppins", sans-serif;
-  }
-  body .product__tags p a {
-    text-decoration: none;
-    color: #6A983C;
   }
   body .product__item {
     display: flex;

@@ -14,7 +14,7 @@ let passworBlog = document.getElementById("passworBlog")
 const data = []
 
 const siginUp = () => {
-    if (name.value !== "" && firstName.value !== "" && number.value !== "" && number.value.length > 12  && password.value !== "") {
+    if (name.value !== "" && firstName.value !== "" && number.value !== "" && number.value.length > 12 && password.value !== "") {
         let person = {
             name: name.value,
             firstName: firstName.value,
@@ -102,5 +102,9 @@ var phoneMask =
 {
     mask: '+{998}(00)000-00-00',
     lazy: false
-} 
-let  mask = new IMask(number,phoneMask)
+}
+let mask = new IMask(number, phoneMask)
+
+for (let i = 0; i < 10; i++) {
+    console.log("salom" + i);
+}
