@@ -16,8 +16,8 @@
         <div class="header__blog">
             <div class="header__contact">
                 <a href="#" class="text-color"> Chat with us</a>
-                <a href="+420 336 775 664">+420 336 775 664</a>
-                <a href="#">info@freshnesecom.com</a>
+                <a href="tel:+1234567890">+420 336 775 664</a>
+                <a href="mailto: abc@example.com">info@freshnesecom.com</a>
             </div>
             <div class="header__contact">
                 <a href="#" class="text-color">Blog</a>
@@ -39,8 +39,8 @@
                     <input type="text" class="header__inp-input" placeholder="Search Products, categories ..." name=""
                         id="">
                 </div>
-                <div class="header__btn" >
-                    <i class="bi bi-search" ></i>
+                <div class="header__btn">
+                    <i class="bi bi-search"></i>
                 </div>
             </div>
             <div class="header__search-acaunt " onclick="account()">
@@ -54,232 +54,257 @@
             <option class="category__select-option" value="">Bakery</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Fruit and vegetables</option>
+            <option value="Fruit">Fruit and vegetables</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Meat and fish</option>
+            <option value="Fruit">Meat and fish</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Drinks</option>
+            <option value="Fruit">Drinks</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Kitchen</option>
+            <option value="Fruit">Kitchen</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Special nutrition</option>
+            <option value="Fruit">Special nutrition</option>
         </select>
         <select class="category__select" name="" id="">
             <option value="">Baby</option>
         </select>
         <select class="category__select" name="" id="">
-            <option value="">Pharmacy</option>
+            <option value="Fruit">Pharmacy</option>
         </select>
     </div>
     <div class="container">
-        <aside class="aside">
-            <h2 class="aside__title">Category menu</h2>
-            <p><a href="" class="text-color">Bakery</a> </p>
-            <p><a href="" class="text-color">Fruit and vegetables</a> </p>
-            <p><a href="" class="text-color">Meat and fish</a> </p>
-            <p><a href="" class="text-color">Drinks</a> </p>
-            <p><a href="" class="text-color">Kitchen</a></p>
-            <button class="aside__button">
-                More categories
-            </button>
-        </aside>
-        <section class="sections">
-            <div class="section__card">
-                <p class="section__card-text text-color">
-                    Banner subfocus
-                </p>
-                <h3 class="section__card-title">
-                    Space for heading
-                </h3>
-                <button class="section__card-button">Read recepies</button>
-            </div>
-            <div class="section__card">
-                <p class="section__card-text text-color">
-                    Banner subfocus
-                </p>
-                <h3 class="section__card-title">
-                    Space for heading
-                </h3>
-                <button class="section__card-button">Read recepies</button>
-            </div>
+        <div class="row">
+            <aside class="aside">
+                <h2 class="aside__title">Category menu</h2>
+                <p><a href="" class="text-color">Bakery</a> </p>
+                <p><a href="" class="text-color">Fruit and vegetables</a> </p>
+                <p><a href="" class="text-color">Meat and fish</a> </p>
+                <p><a href="" class="text-color">Drinks</a> </p>
+                <p><a href="" class="text-color">Kitchen</a></p>
+                <button class="aside__button">
+                    More categories
+                </button>
+            </aside>
+            <section class="sections">
+                <div class="section__card">
+                    <p class="section__card-text text-color">
+                        Banner subfocus
+                    </p>
+                    <h3 class="section__card-title">
+                        Space for heading
+                    </h3>
+                    <button class="section__card-button">Read recepies</button>
+                </div>
+                <div class="section__card">
+                    <p class="section__card-text text-color">
+                        Banner subfocus
+                    </p>
+                    <h3 class="section__card-title">
+                        Space for heading
+                    </h3>
+                    <button class="section__card-button">Read recepies</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <aside class="aside">
+                <h2 class="aside__title">Best selling products</h2>
+                <p><a href="" class="text-color">Kitchen</a> </p>
+                <p><a href="" class="text-color">Meat and fish</a> </p>
+                <p><a href="" class="text-color">Special nutrition</a> </p>
+                <p><a href="" class="text-color">Pharmacy</a> </p>
+                <p><a href="" class="text-color">Baby</a></p>
+                <button class="aside__button">
+                    More categories
+                </button>
+            </aside>
+            <section class="section">
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(1)" id="card">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(11)" id="open">not need</button>
+                    </div>
+                </div>
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(2)" id="card2">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(12)" id="open2">not need</button>
+                    </div>
+                </div>
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(3)" id="card3">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(13)" id="open3">not need</button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        </section>
     </div>
     <div class="container">
-        <aside class="aside">
-            <h2 class="aside__title">Best selling products</h2>
-            <p><a href="" class="text-color">Kitchen</a> </p>
-            <p><a href="" class="text-color">Meat and fish</a> </p>
-            <p><a href="" class="text-color">Special nutrition</a> </p>
-            <p><a href="" class="text-color">Pharmacy</a> </p>
-            <p><a href="" class="text-color">Baby</a></p>
-            <button class="aside__button">
-                More categories
-            </button>
-        </aside>
-        <section class="section">
-            <div class="section__cards">
-                <div class="section__cards-img"></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(1)" id="card">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(11)" id="open">not need</button>
+        <div class="row">
+            <aside class="aside">
+                <h2 class="aside__title">Best selling products</h2>
+                <p><a href="" class="text-color">Kitchen</a> </p>
+                <p><a href="" class="text-color">Meat and fish</a> </p>
+                <p><a href="" class="text-color">Special nutrition</a> </p>
+                <p><a href="" class="text-color">Pharmacy</a> </p>
+                <p><a href="" class="text-color">Baby</a></p>
+                <button class="aside__button">
+                    More categories
+                </button>
+            </aside>
+            <section class="section">
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(4)" id="card4">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(14)" id="open4">not need</button>
+                    </div>
                 </div>
-            </div>
-            <div class="section__cards" >
-                <div class="section__cards-img"></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(2)" id="card2">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(12)" id="open2">not need</button>
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(5)" id="card5">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(15)" id="open5">not need</button>
+                    </div>
                 </div>
-            </div>
-            <div class="section__cards">
-                <div class="section__cards-img"></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(3)" id="card3">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(13)" id="open3">not need</button>
+                <div class="section__cards">
+                    <div class="section__cards-img"></div>
+                    <h4 class="section__cards-title"><a href="#">Product Title</a></h4>
+                    <p class="section__cards_text"> Space for a small product description </p>
+                    <div class="section__cards_sena">
+                        <p class="section__cards_sena-sena"> 1.48 USD</p>
+                        <button class="section__cards_sena_button" onclick="count(6)" id="card6">Buy now</button>
+                        <button class="section__cards_sena_button2" onclick="count(16)" id="open6">not need</button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
     </div>
     <div class="container">
-        <aside class="aside">
-            <h2 class="aside__title">Best selling products</h2>
-            <p><a href="" class="text-color">Kitchen</a> </p>
-            <p><a href="" class="text-color">Meat and fish</a> </p>
-            <p><a href="" class="text-color">Special nutrition</a> </p>
-            <p><a href="" class="text-color">Pharmacy</a> </p>
-            <p><a href="" class="text-color">Baby</a></p>
-            <button class="aside__button">
-                More categories
-            </button>
-        </aside>
-        <section class="section">
-            <div class="section__cards"  >
-                <div class="section__cards-img"></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(4)" id="card4">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(14)" id="open4">not need</button>
-                </div>
-            </div>
-            <div class="section__cards"  >
-                <div class="section__cards-img"></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(5)" id="card5">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(15)" id="open5">not need</button>
-                </div>
-            </div>
-            <div class="section__cards">
-                <div class="section__cards-img"  ></div>
-                <h4 class="section__cards-title">Product Title</h4>
-                <p class="section__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(6)" id="card6">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(16)" id="open6">not need</button>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="news__cards">
         <div class="news__cards-title">
             <h2>Section Headline</h2>
             <button class="news__cards-title-button">Go to Blog</button>
         </div>
-        <div class="news__cards-card"  >
-            <div class="news__cards">
-                <div class="news__cards-img"></div>
-                <h4 class="news__cards-title">Product Title</h4>
-                <p class="news__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(7)" id="card7">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(17)" id="open7">not needi</button>
+        <div class="news__cards">
+            <div class="news__cards-cards">
+                <div class="news__cards-cards-img"></div>
+                <h4 class="news__cards-cards-title"><a href="#">Product Title</a></h4>
+                <p class="news__cards-cards_text"> Space for a small product description </p>
+                <div class="news__cards-cards_sena">
+                    <p class="news__cards-cards_sena-sena"> 1.48 USD</p>
+                    <button class="news__cards-cards_sena_button" onclick="count(7)" id="card7">Buy now</button>
+                    <button class="news__cards-cards_sena_button2" onclick="count(17)" id="open7">not need</button>
                 </div>
             </div>
-            <div class="news__cards" >
-                <div class="news__cards-img"></div>
-                <h4 class="news__cards-title">Product Title</h4>
-                <p class="news__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(8)" id="card8">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(18)" id="open8">not need</button>
+            <div class="news__cards-cards">
+                <div class="news__cards-cards-img"></div>
+                <h4 class="news__cards-cards-title"><a href="#">Product Title</a></h4>
+                <p class="news__cards-cards_text"> Space for a small product description </p>
+                <div class="news__cards-cards_sena">
+                    <p class="news__cards-cards_sena-sena"> 1.48 USD</p>
+                    <button class="news__cards-cards_sena_button" onclick="count(8)" id="card8">Buy now</button>
+                    <button class="news__cards-cards_sena_button2" onclick="count(18)" id="open8">not need</button>
                 </div>
             </div>
-            <div class="news__cards"  >
-                <div class="news__cards-img"></div>
-                <h4 class="news__cards-title">Product Title</h4>
-                <p class="news__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(9)" id="card9">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(19)" id="open9">not need</button>
+            <div class="news__cards-cards">
+                <div class="news__cards-cards-img"></div>
+                <h4 class="news__cards-cards-title"><a href="#">Product Title</a></h4>
+                <p class="news__cards-cards_text"> Space for a small product description </p>
+                <div class="news__cards-cards_sena">
+                    <p class="news__cards-cards_sena-sena"> 1.48 USD</p>
+                    <button class="news__cards-cards_sena_button" onclick="count(9)" id="card9">Buy now</button>
+                    <button class="news__cards-cards_sena_button2" onclick="count(19)" id="open9">not need</button>
                 </div>
             </div>
-            <div class="news__cards">
-                <div class="news__cards-img"></div>
-                <h4 class="news__cards-title">Product Title</h4>
-                <p class="news__cards_text"> Space for a small product description </p>
-                <div class="section__cards_sena">
-                    <p class="section__cards_sena-sena"> 1.48 USD</p>
-                    <button class="section__cards_sena_button" onclick="count(10)" id="card10">Buy now</button>
-                    <button class="section__cards_sena_button2" onclick="count(20)" id="open10">not need</button>
+            <div class="news__cards-cards">
+                <div class="news__cards-cards-img"></div>
+                <h4 class="news__cards-cards-title"><a href="#">Product Title</a></h4>
+                <p class="news__cards-cards_text"> Space for a small product description </p>
+                <div class="news__cards-cards_sena">
+                    <p class="news__cards-cards_sena-sena"> 1.48 USD</p>
+                    <button class="news__cards-cards_sena_button" onclick="count(10)" id="card10">Buy now</button>
+                    <button class="news__cards-cards_sena_button2" onclick="count(20)" id="open10">not need</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div class="blog-post">
-        <div class="blog-text">
-            <div>
-                <h2>Read our Blog posts</h2>
-            </div>
 
+    <div class="container">
+        <div class="blog-title">
+            <h2>
+                Read our Blog posts
+            </h2>
+            <button class="news__cards-title-button">Go to Blog</button>
         </div>
-        <div class="div-blog-img">
-            <div class="blog-item-img">
-                <p>Our chef tips for a great and tasty dinner ready in 20 minutes</p>
+        <div class="rows">
+            <div class="blog-img">
+                <h2>
+                    Our chef tips for a great and tasty dinner ready in 20 minutes
+                </h2>
             </div>
             <div class="blog-card">
-                <img class="" src="./img/imgbg.jpg" alt="">
-                <p class="color-green">Vegetable</p>
-                <h3>Which vegetable your family will love and wants eat each day</h3>
+                <div class="blog-card-img">
+
+                </div><br>
+
+                <p class="blog-card-link">
+                    Vegetable
+                </p><br>
+
+                <h4 class="blog-card-title">
+                    Which vegetable your family <br> will love and want’s eat each
+                </h4><br>
+                <p class="blog-card-date">Author</p>
             </div>
-            <div class="blog-item-text">
-                <h3>Salat is kinda good start to your morning routines</h3>
-                <p>Author 14.1.52</p>
-                <h3>Our chef tips for a great and healthy breakfast</h3>
-                <p>Author 14.1.52</p>
-                <h3>Prepare a simple and delicious breads</h3>
-                <p>Author 14.1.52</p>
+            <div class="blog-link">
+                <h4 class="blog-card-title">
+                    Which vegetable your family <br> will love and want’s eat each
+                </h4> <br>
+                <p class="blog-card-date">Author : 14.1.2020</p><br><br><br>
+                <h4 class="blog-card-title">
+                    Which vegetable your family <br> will love and want’s eat each
+                </h4> <br>
+                <p class="blog-card-date">Author : 14.1.2020</p><br><br><br>
+                <h4 class="blog-card-title">
+                    Which vegetable your family <br> will love and want’s eat each
+                </h4><br>
+                <p class="blog-card-date">Author : 14.1.2020</p>    
             </div>
-            <div class="blog-imgs">
-                <img src="./img/imgbg.jpg" alt=""><br>
-                <img src="./img/imgbg.jpg" alt=""><br>
+            <div class="blog-images">
+                <img src="./img/imgbg.jpg" alt="">
+                <img src="./img/imgbg.jpg" alt="">
                 <img src="./img/imgbg.jpg" alt="">
             </div>
         </div>
-
     </div>
+
     <div class="product__tags">
         <div class="product__tags-item1">
             <h3>Get in touch</h3>
@@ -315,7 +340,7 @@
             <h2>Product tags</h2>
         </div>
         <div class="product__item" id="row">
-            
+
         </div>
     </div>
     <script src="./js/script.js"></script>
